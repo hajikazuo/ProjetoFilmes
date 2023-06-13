@@ -155,28 +155,20 @@ h1, h2, p {
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .navbar .links {
-    flex-direction: column;
-    align-items: flex-start;
+    display: none; /
   }
 
-  .action_btn {
-    margin-top: 1rem;
- }
-
-  .card {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 2rem;
+  .navbar .action_btn {
+    margin-left: auto; 
   }
 
   .content {
-    flex-direction: column;
-    align-items: flex-start;
+    padding-top: 60px; 
+    align-items: center; 
+  }
+
+  .card {
+    width: 90%; 
   }
 }
