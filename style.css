@@ -156,7 +156,7 @@ h1, h2, p {
 
 @media screen and (max-width: 768px) {
   .navbar .links {
-    display: none; /
+    display: none; 
   }
 
   .navbar .action_btn {
