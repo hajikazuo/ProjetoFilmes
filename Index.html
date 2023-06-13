@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo"><a href="#">Filmes Studio Ghibli</a></div>
+            <ul class="links">
+                <li><a href="hero">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/nilton-kazuo/" target="_blank">Contato</a></li>
+                <li><a href="hero">Sobre</a></li>
+                <li><a href="hero">Noticias</a></li>
+            </ul>
+            <a href="https://github.com/hajikazuo" target="_blank" class="action_btn">Mais Projetos</a> 
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <div class="TopCard">
+                <h2 class="title">Mononoke Hime</h2>
+                <span class="secondaryText">fantasia</span>
+            </div>
+            <div class="mediaCard">
+                <img class="cardImage" src="img/img1.gif" alt="Imagem 1">
+            </div>
+            <div class="bottomCard">
+                <p class="bottomText">Após enfrentar um deus javali enfurecido, o príncipe Ashitaka é amaldiçoado com um mal que pode matá-lo.</p>
+                <div>
+                    <button onclick="abrirDetalhes(1)">Ver Detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="TopCard">
+                <h2 class="title">O castelo animado</h2>
+                <span class="secondaryText">fantasia</span>
+            </div>
+            <div class="mediaCard">
+                <img class="cardImage" src="img/img2.gif" alt="Imagem 2">
+            </div>
+            <div class="bottomCard">
+                <p class="bottomText">Uma bruxa lança uma terrível maldição sobre a jovem Sophie, transformando-a numa velha de 90 anos.</p>
+                <div>
+                    <button onclick="abrirDetalhes(2)">Ver Detalhes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy Nilton Kazuo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
