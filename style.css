@@ -1,154 +1,182 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
 
-  body{
-    height: 100vh;
-    background-color: #292828;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-  }
+body {
+  height: 100vh;
+  background-color: #292828;
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+}
 
-  li{
-    list-style: none;
-  }
+li {
+  list-style: none;
+}
 
-  a{
-    text-decoration: none;
-    color: #FFF;
-    font-size: 1rem;
-  }
-  a:hover{
-    color: gray;
-  }
+a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1rem;
+}
 
-  header{
-    position: relative;
-    padding: 0 2rem;
-  }
+a:hover {
+  color: gray;
+}
 
-  .navbar{
-    width: 100%;
-    height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-  }
+header {
+  position: relative;
+  padding: 0 2rem;
+}
 
-  .navbar .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .navbar .links{
-    display: flex;
-    gap: 2rem;
-  }
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
 
-  .action_btn{
-    background-color:  rgb(105, 124, 124);
-    color:#FFF;
-    padding: 0.5rem;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: scale 0.2 ease;
-  }
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
-  .action_btn:hover{
-    scale: 1.05;
-    color: #fff;
-  }
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
 
-  .action_btn:active {
-    scale: 0.95;
-  }
+.action_btn {
+  background-color: rgb(105, 124, 124);
+  color: #FFF;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2s ease;
+}
 
+.action_btn:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.action_btn:active {
+  transform: scale(0.95);
+}
 
 /* cards */
 
-.content{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-    height: 100vh;
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.card{
-    background-color: #FFF;
-    border-radius: 20px;
-    box-shadow: 0px 2px 23px #807e7e ;
-    width: 400px;
-    margin-right: 50px;
+.card {
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0px 2px 23px #807e7e;
+  width: 400px;
+  margin-right: 50px;
 }
 
-.mediaCard{
-    height: 300px;
-    width: 100%;
+.mediaCard {
+  height: 300px;
+  width: 100%;
 }
 
 .cardImage {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.title{
-    color:#525151;
-
+.title {
+  color: #525151;
 }
 
-.secondaryText{
-    color:#807e7e;
-
+.secondaryText {
+  color: #807e7e;
 }
 
-.bottomText{
-    color:#807e7e;
+.bottomText {
+  color: #807e7e;
 }
 
-.TopCard{
-    padding: 20px;
-    padding-top: 0px;
+.TopCard {
+  padding: 20px;
+  padding-top: 0px;
 }
 
-.bottomCard{
-    padding: 20px;
+.bottomCard {
+  padding: 20px;
 }
 
 button {
-    background-color: rgb(105, 124, 124);
-    border: none;
-    outline: none;
-    padding: 8px 45px;
-    border-radius: 8px;
-    color: #FFF;
-    transition: scale 0.2 ease;
+  background-color: rgb(105, 124, 124);
+  border: none;
+  outline: none;
+  padding: 8px 45px;
+  border-radius: 8px;
+  color: #FFF;
+  transition: scale 0.2s ease;
 }
 
-button:hover{
-  scale: 1.05;
+button:hover {
+  transform: scale(1.05);
   color: #fff;
 }
 
 button:active {
-  scale: 0.95;
+  transform: scale(0.95);
 }
 
 /* detalhes */
 
-h1, h2, p{
+h1, h2, p {
   color: #FFF;
   padding: 20px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .action_btn {
+    margin-top: 1rem;
+ }
+
+  .card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
