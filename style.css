@@ -164,11 +164,11 @@ h1, h2, p {
   }
 
   .content {
-    padding-top: 60px; 
-    align-items: center; 
+    padding: 70px; 
+    display: block;
   }
 
   .card {
-    width: 90%; 
+    width: 50%; 
   }
 }
