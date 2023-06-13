@@ -51,13 +51,6 @@
     gap: 2rem;
   }
 
-  .navbar .toggle_btn {
-    color: #FFF;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-  }
-
   .action_btn{
     background-color:  rgb(105, 124, 124);
     color:#FFF;
