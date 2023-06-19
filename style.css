@@ -169,6 +169,7 @@ h1, h2, p {
   }
 
   .card {
-    width: 80%; 
+    width: 80vw; 
+    margin-top: 50px;
   }
 }
